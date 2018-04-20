@@ -2,8 +2,9 @@
 class ControllerExtensionPaymentNihaoPayOnlineWechatPay extends Controller {
 	public function index() {
 		$this->load->language('extension/payment/nihaopay_online_wechatpay');
-		
-		return $this->load->view('extension/payment/nihaopay_online_wechatpay', '');
+		$data = array();
+        $data['button_confirm'] = $this->language->get('button_confirm');
+		return $this->load->view('extension/payment/nihaopay_online_wechatpay', $data);
 	}
 
 	public function send() {

@@ -2,6 +2,7 @@
 // Text
 $_['text_title']           = 'Credit Card / Debit Card';
 $_['text_credit_card']     = 'Credit Card Details';
+$_['button_confirm'] = "Continue";
 
 // Entry
 $_['entry_cc_owner']       = 'Card Owner';

@@ -2,8 +2,9 @@
 class ControllerExtensionPaymentNihaoPayOnlineUnionPay extends Controller {
 	public function index() {
 		$this->load->language('extension/payment/nihaopay_online_unionpay');
-		
-		return $this->load->view('extension/payment/nihaopay_online_unionpay', '');
+		$data = array();
+        $data['button_confirm'] = $this->language->get('button_confirm');
+		return $this->load->view('extension/payment/nihaopay_online_unionpay', $data);
 	}
 
 	public function send() {

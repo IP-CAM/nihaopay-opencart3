@@ -3,6 +3,8 @@ class ControllerExtensionPaymentNihaoPayEx extends Controller {
 	public function index() {
 		$this->load->language('extension/payment/nihaopay_ex');
 
+		$data = array();
+        $data['button_confirm'] = $this->language->get('button_confirm');
 		$data['months'] = array();
 
 		for ($i = 1; $i <= 12; $i++) {
